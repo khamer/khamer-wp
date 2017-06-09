@@ -1,0 +1,18 @@
+# behat.yml
+default:
+  suites:
+    # This suite is present as an example. The tests in this suite will only
+    # pass on freshly installed copy of WordPress.
+    core:
+      filters:
+       tags: "~@upstreamonly"
+      paths:
+        - ../vendor/pantheon-systems/pantheon-wordpress-upstream-tests/features/
+      contexts:
+        - PantheonSystems\PantheonWordPressUpstreamTests\Behat\MinkContext
+        - PantheonSystems\PantheonWordPressUpstreamTests\Behat\AdminLogIn
+        - PantheonSystems\PantheonWordPressUpstreamTests\Behat\ResponseHeader
+  extensions:
+    Behat\MinkExtension:
+      # base_url set by ENV
+      goutte: ~
