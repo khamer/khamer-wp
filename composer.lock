@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "62283b629d9707494c179f38598ec9af",
+    "content-hash": "4ef1002e6806b936addf2e78ee910ef5",
     "packages": [
         {
             "name": "composer/installers",
@@ -356,6 +356,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-native-php-sessions/"
+        },
+        {
+            "name": "wpackagist-theme/robot",
+            "version": "1.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/robot/",
+                "reference": "1.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/robot.1.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/robot/"
         },
         {
             "name": "wpackagist-theme/twentyseventeen",
